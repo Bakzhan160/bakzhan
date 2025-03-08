@@ -5,7 +5,7 @@ body {
     background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3JPvFdWNjmJO0Z0dT-Cv4NHbGiUhJUtXR6A&s') no-repeat center center/cover;
     color: white;
     margin: 0;
-    height: 200vh;
+    height: 200;
     display: flex;
     justify-content: center;
     align-items: center;
