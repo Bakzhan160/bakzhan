@@ -1,0 +1,58 @@
+/* Фон страницы */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3JPvFdWNjmJO0Z0dT-Cv4NHbGiUhJUtXR6A&s') no-repeat center center/cover;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Контейнер с поздравлением */
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Кнопка */
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background: pink;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: rgb(16, 255, 4);
+}
+
+/* Скрытый подарок */
+.hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 1s ease, transform 1s ease;
+    display: block;
+}
+
+/* Когда подарок активен */
+.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Изображение */
+#gift img {
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
