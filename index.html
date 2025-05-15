@@ -87,5 +87,21 @@
             document.getElementById(id).style.display = 'block';
         }
     </script>
+    <script>
+function sendToGoogleSheets(data) {
+  fetch("ВСТАВЬ_ТУТ_ТВОЙ_СКОПИРОВАННЫЙ_URL", {
+    method: "POST",
+    body: data,
+    headers: {
+      "Content-Type": "text/plain"
+    }
+  })
+  .then(res => alert("Жіберілді: " + data));
+}
+</script>
+
+<!-- Пример кнопки -->
+<button onclick="sendToGoogleSheets('Сүт таңдалды')">Сүт</button>
+
 </body>
 </html>
